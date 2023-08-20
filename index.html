@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat App</title>
+    <!-- socket.io 클라이언트 라이브러리를 포함 websocket연결 처리 -->
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <!-- 실시간 메시지 추가 -->
+    <ul id="messages"></ul>
+    <form id="form" action="">
+        <input id="input" autocomplete="off" /><button>Send</button>
+    </form>
+    <!-- client측 js 실행 -->
+    <script src="client.js"></script>
+</body>
+</html>

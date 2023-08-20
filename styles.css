@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.chat-container {
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-messages {
+text-align: right;
+  flex: 1;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#message-input {
+  flex: 1;
+  padding: 5px;
+}
+
+#send-button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.message {
+margin: 5px;
+padding: 8px;
+border-radius: 8px;
+}
+
+.message.sent {
+align-self: flex-end;
+background-color: #007bff;
+color: white;
+flex-direction: row-reverse;
+}
+
+/* 글자수에 따라 다른 스타일 적용 */
+.message.sent.short {
+width: auto;
+max-width: 50%;
+}
+
+.message.sent.medium {
+width: auto;
+max-width: 70%;
+}
+
+.message.sent.long {
+width: auto;
+max-width: 100%;
+}
